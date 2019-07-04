@@ -28,7 +28,7 @@ SECRET_KEY = 'pxhip-z2*ysg8j&7cv66s=#6l+oa5coo@l+n(nn-c!!!*4t-md'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 
 # Application definition
