@@ -1,0 +1,7 @@
+dist: xenial   # required for Python >= 3.7
+language: python
+python:
+        - "3.7"
+install:
+        - pipenv install
+script: python manage.py test
