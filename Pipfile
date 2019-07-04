@@ -12,6 +12,7 @@ django-environ = "*"
 django-heroku = "*"
 django-extensions = "*"
 gunicorn = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
