@@ -1,5 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def home(request):
-    return render(request, 'home.html')
+    return redirect('month')
+
+
+def month(request):
+    return render(request, 'month.html')
