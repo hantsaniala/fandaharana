@@ -9,29 +9,31 @@ class Person(models.Model):
         blank=True,
         null=True, )
 
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=40)
+    first_name = models.CharField('fanampin\'anarana', max_length=30)
+    last_name = models.CharField('anarana', max_length=40, blank=True)
 
     def __str__(self):
         return self.first_name
 
 
 class Public(models.Model):
-    date = models.DateField()
+    date = models.DateField('daty')
 
-    hour_1 = models.TimeField()
-    hour_2 = models.TimeField()
+    hour_1 = models.TimeField('ora (manomboka)')
+    hour_2 = models.TimeField('ora (mifarana)')
 
-    place = models.CharField(max_length=30)
+    place = models.CharField('toerana', max_length=30)
 
     person_1 = models.ForeignKey(
         Person,
         on_delete=models.CASCADE,
+        verbose_name='mpandray anjara voalohany',
         related_name='public_1')
 
     person_2 = models.ForeignKey(
         Person,
         on_delete=models.CASCADE,
+        verbose_name='mpandray anjara faharoa',
         related_name='public_2')
 
     def __str__(self):

@@ -16,3 +16,6 @@ whitenoise = "*"
 
 [requires]
 python_version = "3.7"
+
+[script]
+server = "python manage.py runserver"
