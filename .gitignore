@@ -1,6 +1,6 @@
 env
 .env
-.mo
+*.mo
 *.DS_Store
 *.pyc
 __pycache__/
