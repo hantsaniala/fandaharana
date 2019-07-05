@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.utils import translation
 
 from .models import Public
 
@@ -8,6 +9,7 @@ def home(request):
 
 
 def month(request):
+    translation.activate('mg-mg')
     publics = Public.objects.all()
 
     data = {

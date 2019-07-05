@@ -1,0 +1,38 @@
+# Translation for malagasy language.
+# Copyright (C) 2019 THE UJW DEV TEAM.
+# This file is distributed under the same license as the fandaharana package.
+# Unviray <unviray@gmail.com>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-05 22:08+0300\n"
+"PO-Revision-Date: 2019-07-05 22:08+0300\n"
+"Last-Translator: Unviray <unviray@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: mg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Monday"
+msgstr "Alatsinainy"
+
+msgid "Tuesday"
+msgstr "Talata"
+
+msgid "Wednesday"
+msgstr "Alarobia"
+
+msgid "Thursday"
+msgstr "Alakamisy"
+
+msgid "Friday"
+msgstr "Zoma"
+
+msgid "Saturday"
+msgstr "Asabotsy"
+
+msgid "Sunday"
+msgstr "Alahady"
