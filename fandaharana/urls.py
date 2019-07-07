@@ -5,5 +5,5 @@ from .views import home, month
 
 urlpatterns = [
     path('', home, name='home'),
-    path('volana/', month, name='month'),
+    path('volana/<int:month_num>-<int:year_num>', month, name='month'),
 ]
