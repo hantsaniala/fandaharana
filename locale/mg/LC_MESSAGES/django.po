@@ -36,3 +36,40 @@ msgstr "Asabotsy"
 
 msgid "Sunday"
 msgstr "Alahady"
+
+
+msgid "January"
+msgstr "Janoary"
+
+msgid "February"
+msgstr "Febroary"
+
+msgid "March"
+msgstr "Martsa"
+
+msgid "April"
+msgstr "Aprily"
+
+msgid "May"
+msgstr "Mey"
+
+msgid "June"
+msgstr "Jona"
+
+msgid "July"
+msgstr "Jolay"
+
+msgid "August"
+msgstr "Aogositra"
+
+msgid "September"
+msgstr "Septambra"
+
+msgid "October"
+msgstr "Oktobra"
+
+msgid "November"
+msgstr "Novambra"
+
+msgid "December"
+msgstr "Desambra"

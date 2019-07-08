@@ -10,20 +10,26 @@
 					<th scope="col">Mpandray anjara</th>
 				</tr>
 			</thead>
-			<tbody>                                                                                                             {% for pub in publics %}
-				<tr>                                                                                                                <th scope="row">{{ pub.date|date:"l j" }}</th>                                                              <td>{{ pub.hour_1|date:"H" }}<em class="text-muted">H</em> - {{ pub.hour_2|date:"H" }}<em class="text-muted">H</em></td>
+			<tbody>
+				{% for pub in publics %}
+				<tr>
+					<th scope="row">{{ pub.date|date:"l j" }}</th>
+					<td>{{ pub.hour_1|date:"H" }}H - {{ pub.hour_2|date:"H" }}H</td>
 					<td>{{ pub.place }}</td>
 					<td>{{ pub.person_1 }} - {{ pub.person_2}}</td>
-				</tr>                                                                                                       {% endfor %}
+				</tr>
+				{% endfor %}
 			</tbody>
 		</table>
 		<div class="card-deck">
-			{% for pub in publics %}                                                                                       <div class="card bg-light d-sm-none shadow-sm">
-				<div class="row no-gutters">                                                                                        <div class="col-xs">
+			{% for pub in publics %}
+			<div class="card bg-light d-sm-none shadow-sm">
+				<div class="row no-gutters">
+					<div class="col-xs">
 						<div class="card-body mx-0">
 							<h5 class="card-title">{{ pub.date|date:"l j" }}</h5>
 							<h6 class="card-subtitle text-muted">
-								{{ pub.hour_1|date:"H" }}<em>H</em> - {{ pub.hour_2|date:"H" }}<em>H</em>
+								{{ pub.hour_1|date:"H" }}H - {{ pub.hour_2|date:"H" }}H
 							</h6>
 						</div>
 					</div>                                                                                                      <div class="col-xs">
