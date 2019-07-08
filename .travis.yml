@@ -5,5 +5,6 @@ python:
 install:
         - pipenv install
 script:
+        - python manage.py collectstatic
         - python manage.py compilemessages
         - python manage.py test
