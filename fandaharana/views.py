@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from django.utils import translation
 
-from datetime import datetime
+from datetime import datetime  #: 10, 11, 21, 23, 28
 
-from .models import Public
+from .models import Public  #: 17
 
 
 def home(request):
