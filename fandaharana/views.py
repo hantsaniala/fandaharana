@@ -37,3 +37,13 @@ def month(request, month_num, year_num):
         'dt_next': dt_next, }
 
     return render(request, 'month.html', data)
+
+
+def error_404(request, exception=None):
+    data = {}
+    return render(request, 'templates/404.html', data)
+
+
+def error_500(request, exception=None):
+    data = {}
+    return render(request, 'templates/404.html', data)

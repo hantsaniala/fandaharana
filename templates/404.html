@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block stylesheet %}
+<link rel='stylesheet' href="{% static 'css/style.css' %}">
+{% endblock stylesheet %}
+
+
+{% block container %}
+<div class="row">
+	<div class="col-md-12">
+		<div class="error-template">
+			<h1 class="h1">Miala tsiny fa tsy hita ny pejy tadiavinao.</h1>
+			<h5 class="h5 text-muted">404 Not Found</h2>
+			<div class="error-details">
+				Ampirisihinay ianao hankany amin’ny pejy fidirana, na hampiasa ny rohy eto ambany.
+			</div>
+			<div class="error-actions">
+				<a href="{% url 'home' %}" class="btn btn-primary btn-lg">
+					<i class="fas fa-home"></i>
+					Pejy fidirana
+				</a>
+				<!--
+				<a href="http://www.jquery2dotnet.com" class="btn btn-outline-dark btn-lg">
+					<i class="fas fa-envelope"></i>
+					Contact Support
+				</a>
+				-->
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
