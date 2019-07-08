@@ -15,7 +15,7 @@ MANAGE_FILE=${MANAGE_FILE:2}
 echo "-----> Compiling translation files"
 
 # Workaround to compile only dictionaries of this project, skipping deps.
-python "$MANAGE_FILE" compilemessages 2>&1 | indent
+python manage.py compilemessages 2>&1 | indent
 
 echo "-----> Done post-compile hook"
 echo ""
