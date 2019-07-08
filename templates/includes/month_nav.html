@@ -5,7 +5,8 @@
 	<ul class="pagination pagination-lg justify-content-center">
 		<li class="page-item">
 			<a class="page-link" href="{% url 'month' dt_prev.month dt_prev.year %}">
-				«« {{ dt_prev.month|month_name }}
+				<i class="fas fa-chevron-left"></i>
+				{{ dt_prev.month|month_name }}
 				<small>{{ dt_prev.year }}</small>
 			</a>
 		</li>
@@ -18,7 +19,8 @@
 		<li class="page-item">
 			<a class="page-link" href="{% url 'month' dt_next.month dt_next.year %}">
 				{{ dt_next.month|month_name }}
-				<small>{{ dt_next.year }}</small> »»
+				<small>{{ dt_next.year }}</small>
+				<i class="fas fa-chevron-right"></i>
 			</a>
 		</li>
 	</ul>
