@@ -13,6 +13,7 @@ django-heroku = "*"
 django-extensions = "*"
 gunicorn = "*"
 whitenoise = "*"
+sentry-sdk = "==0.10.0"
 
 [requires]
 python_version = "3.7"
