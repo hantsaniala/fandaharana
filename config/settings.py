@@ -17,17 +17,17 @@ import sentry_sdk
 
 from sentry_sdk.integrations.django import DjangoIntegration
 
-sentry_sdk.init(
-    dsn="https://37c84a8f0a254674ab05ce42e1c7a1a0@sentry.io/1500339",
-    integrations=[DjangoIntegration()]
-)
-
 # Build paths inside the project like this: BASE_DIR(...) or BASE_DIR.path(...)
 BASE_DIR = environ.Path(__file__) - 2
 
 env = environ.Env()
 environ.Env.read_env(BASE_DIR('.env'))
 
+
+sentry_sdk.init(
+    dsn=env.str('SENTRY_DSN'),
+    integrations=[DjangoIntegration()]
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
