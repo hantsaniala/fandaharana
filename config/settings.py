@@ -13,9 +13,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import environ
 
 import sentry_sdk
-
-
 from sentry_sdk.integrations.django import DjangoIntegration
+
 
 # Build paths inside the project like this: BASE_DIR(...) or BASE_DIR.path(...)
 BASE_DIR = environ.Path(__file__) - 2
