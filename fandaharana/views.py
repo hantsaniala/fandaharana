@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.utils import translation
+from django.http import Http404
 
 from datetime import datetime  #: 10, 11, 21, 23, 28
 
@@ -14,6 +15,10 @@ def home(request):
 
 def month(request, month_num, year_num):
     translation.activate('mg-mg')
+
+    if month_num > 12 or month_num < 1 or year_num > 9999 or year_num < 1000:
+        raise Http404
+
     publics = Public.objects.filter(
         date__year=year_num).filter(
         date__month=month_num)
@@ -38,13 +43,3 @@ def month(request, month_num, year_num):
         'dt_next': dt_next, }
 
     return render(request, 'month.html', data)
-
-
-def error_404(request, exception=None):
-    data = {}
-    return render(request, 'templates/404.html', data)
-
-
-def error_500(request, exception=None):
-    data = {}
-    return render(request, 'templates/404.html', data)
