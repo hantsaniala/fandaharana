@@ -32,6 +32,7 @@ def month(request, month_num, year_num):
 
     data = {
         'publics': publics,
+        'now': datetime.now(),
         'dt': dt,
         'dt_prev': dt_prev,
         'dt_next': dt_next, }

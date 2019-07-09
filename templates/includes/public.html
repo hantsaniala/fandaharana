@@ -3,27 +3,33 @@
 		<h3 class="card-title mb-4">Fampirantiana</h3>
 		<table class="table d-none d-sm-table">
 			<thead class="thead-light">
+				{% if publics %}
 				<tr>
 					<th scope="col">Daty</th>
 					<th scope="col">Ora</th>
 					<th scope="col">Toerana</th>
 					<th scope="col">Mpandray anjara</th>
 				</tr>
+				{% endif %}
 			</thead>
 			<tbody>
 				{% for pub in publics %}
-				<tr>
+				<tr {% if now.year == pub.date.year and now.month == pub.date.month and now.day == pub.date.day %}class="table-active"{% endif %}>
 					<th scope="row">{{ pub.date|date:"l j" }}</th>
 					<td>{{ pub.hour_1|date:"H" }}H - {{ pub.hour_2|date:"H" }}H</td>
 					<td>{{ pub.place }}</td>
 					<td>{{ pub.person_1 }} - {{ pub.person_2}}</td>
 				</tr>
+				{% empty %}
+				<div class="alert alert-warning" role="alert">
+					Mbola tsy misy fandaharana fampirantina vita amin'ity volana ity
+				</div>
 				{% endfor %}
 			</tbody>
 		</table>
 		<div class="card-deck">
 			{% for pub in publics %}
-			<div class="card bg-light d-sm-none shadow-sm">
+			<div class="card {% if now.year == pub.date.year and now.month == pub.date.month and now.day == pub.date.day %}{% else %}bg-light{% endif %} d-sm-none shadow-sm">
 				<div class="row no-gutters">
 					<div class="col-xs">
 						<div class="card-body mx-0">
