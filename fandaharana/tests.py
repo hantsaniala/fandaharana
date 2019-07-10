@@ -42,3 +42,13 @@ class MonthTests(TestCase):
         self.assertContains(self.response, 'John - Alice')
         self.assertContains(self.response, '15H - 17H')
         self.assertContains(self.response, 'Alarobia 12')
+
+
+class MonthErrorTests(TestCase):
+    def setUp(self):
+        self.url = reverse('month',
+                           kwargs={'month_num': 16, 'year_num': 2012})
+        self.response = self.client.get(self.url)
+
+    def test_status_code(self):
+        self.assertEquals(self.response.status_code, 404)
