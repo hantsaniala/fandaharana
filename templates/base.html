@@ -7,6 +7,7 @@
 
 		<title>{% block title %}Fandaharana{% endblock title %}</title>
 		<link rel='stylesheet' href="{% static 'css/bootstrap.min.css' %}">
+		<link rel='stylesheet' href="{% static 'css/style.css' %}">
 
 		<link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
 		<link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
@@ -17,16 +18,24 @@
 
 		{% block stylesheet %}{% endblock stylesheet %}
 	</head>
-	<body>
-		<div class="container">
-			<h1 class="h1 my-3">
-				Fandaharana
-				<small class="text-muted">Ankadindravola</small>
-			</h1>
 
-			{% block container %}
-			{% endblock container %}
+
+
+	<body>
+		<div class="d-flex flex-column sticky-footer-wrapper">
+			<main class="container flex-fill">
+				<h1 class="h1 my-3">
+					Fandaharana
+					<small class="text-muted">Ankadindravola</small>
+				</h1>
+
+				{% block container %}
+				{% endblock container %}
+			</main>
+
+			{% include 'includes/footer.html' %}
 		</div>
+
 		<script src="{% static 'js/bootstrap.min.js' %}"></script>
 		<script src="{% static 'js/jquery.min.js' %}"></script>
 		{% block script %}

@@ -43,3 +43,11 @@ def month(request, month_num, year_num):
         'dt_next': dt_next, }
 
     return render(request, 'month.html', data)
+
+
+def privacy(request):
+    return render(request, 'privacy.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')

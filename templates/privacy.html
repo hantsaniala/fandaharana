@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+{% block container %}
+	<h2 class="h2 mt-5">Fifanekena Momba ny Tsiambaratelo</h2>
+	<small class="text-muted">Nohavaozina ny 15 Jolay 2019</small>
+
+	<p class="mt-4 lead">Matoa ianao mampiasa an'ity tranokala ity dia manaporofo izany hoe hekenao daholo ny fifanekena rehetra ato.</p>
+
+	<h3 class="h3">Ny mombamomba anao</h3>
+
+	<p>Mba ahafahanao mampiasa ankalalahana an'ity tranokala ity dia ilainay ny fanazavana mombamomba anao anisan'izany ny anaranao, adiresy email anao, ary ny fiangonana misy anao.</p>
+
+	<h3 class="h3">Nahoana no ilainay ny mombamomba anao ?</h3>
+
+	<p>
+	Mba hampety tsara ny fampiasanao an'ity tranokala ity no antony ilainay ny mombamomba anao. Ireto avy no antony ilainay ny mombamomba anao:
+	<ul>
+		<li>Hafantaranay fa tena rahalahy na anabavy ianao ka azo omena alalana hampiasa an'ity tranokala ity.</li>
+		<li>Hafantaranay ny fiangonana misy anao mba hampisehoanay ny fandaharana mifanaraka amin'izay.</li>
+	</ul>
+	</p>
+
+	<h3 class="h3">Fiarovana ny fanazavana momba anao</h3>
+
+	<p>Mialatsiny fa tsy tena mahazo antoka izahay hoe voaharo tsara ny toerana misy ny mombamomba anao. Izany no mahatonga anay tsy haka ny mombamomba anao toy ny adiresin'ny tranonao afatsy ny anaranao sy ny adiresy email anao. <br>Afaka misafidy ianao na hampiasa adiresy email na hampiasa laharan'ny finday, ampirisinay anefa ianao mba hampiasa adiresy email fa tsy laharan'ny finday ho fiarovana anao. Afaka mampiasa solon'anarana koa ianao raha tsy tianao hipetraka ato ny anaranao feno.</p>
+
+	<h3 class="h3">Ny zonao.</h3>
+
+	<p>Ianao dia manan-jo malalaka hikirakira ny mombamomba anao ato amin'ity tranokala ity. Ireto avy izany zo izany:
+	<ul>
+		<li><strong>Mahita.</strong> Afaka mahita izay fanazavana momba anao ato ianao na maka dika mitovy amin'izany.</li>
+		<li><strong>Manova, Mamafa.</strong> Zonao koa ny manova ny mombamomba anao ato na mamafa mihitsy.</li>
+		<li><strong>Mandrara.</strong> Afaka raranao ny fampiasako ny mombamomba anao na ny ampahany amin'izany.</li>
+	</ul>
+	</p>
+
+	<div class="card">
+		<div class="card-body">
+			<p class="card-text">Mifandraisa aminay raha mila fanazavana fanampiny</p>
+			<a href="{% url 'contact' %}" class="card-link btn btn-primary">Hifandray aminay</a>
+		</div>
+	</div>
+{% endblock container %}

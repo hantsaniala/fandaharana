@@ -14,6 +14,8 @@ django-extensions = "*"
 gunicorn = "*"
 whitenoise = "*"
 sentry-sdk = "==0.10.0"
+coverage = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.7"
